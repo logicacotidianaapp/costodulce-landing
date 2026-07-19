@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Calcula el costo exacto de tus recetas de repostería ingrediente por ingrediente. Controla la merma, costos fijos y genera cotizaciones en PDF 100% offline.">
+    <title>CostoDulce - Calculadora de Costos para Repostería</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Schema JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "CostoDulce: Costos Repostería",
+      "operatingSystem": "Android",
+      "applicationCategory": "BusinessApplication",
+      "description": "Calculadora de costos de repostería y cocina 100% offline. Calcula la merma, costos fijos, mano de obra y genera reportes en PDF.",
+      "offers": {
+        "@type": "Offer",
+        "price": "2.99",
+        "priceCurrency": "USD"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "ratingCount": "124"
+      }
+    }
+    </script>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <a href="#" class="logo">
+                🍰 Costo<span>Dulce</span>
+            </a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#features">Características</a></li>
+                    <li><a href="#pricing">Precios</a></li>
+                    <li><a href="privacy.html">Privacidad</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <h1>Fija el precio correcto de tus recetas de repostería</h1>
+                <p>Calcula el costo real ingrediente por ingrediente, deduce la merma, suma tu mano de obra, empaques y genera cotizaciones PDF limpias para tus clientes. 100% privado y offline.</p>
+                <div class="hero-actions">
+                    <a href="#pricing" class="btn btn-primary" id="download-cta">Obtener la App</a>
+                    <a href="#features" class="btn btn-secondary" id="learn-more-cta">Ver funciones</a>
+                </div>
+            </div>
+            <div class="hero-image-wrapper">
+                <div class="mockup-container">
+                    <div class="mockup-screen">
+                        <div style="font-size: 1.1rem; font-weight: 700; color: #ffb03b; margin-bottom: 0.5rem; text-align: center;">🧁 Pastel de Tres Leches</div>
+                        <div class="mockup-card">
+                            <div style="font-weight: 600;">Costo de Insumos: $8.45</div>
+                            <div class="mockup-bar" style="width: 60%;"></div>
+                        </div>
+                        <div class="mockup-card">
+                            <div style="font-weight: 600;">Mano de Obra: $4.00</div>
+                            <div class="mockup-bar" style="width: 40%; background-color:#ffb03b;"></div>
+                        </div>
+                        <div class="mockup-card">
+                            <div style="font-weight: 600; color: #f6e6d5;">Precio Venta Sugerido:</div>
+                            <div style="font-size: 1.2rem; font-weight: 800; color: #ffb03b;">$20.75 (30% Margen)</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <h2 class="section-title">Diseñado para <span>Reposteras y Pasteleros</span></h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <span class="feature-icon">⚖️</span>
+                    <h3>Conversión Automática</h3>
+                    <p>Registra ingredientes por kilogramo o litro y utilízalos en tus recetas en gramos o mililitros. La app hace la conversión matemática al instante.</p>
+                </div>
+                <div class="feature-card">
+                    <span class="feature-icon">🍂</span>
+                    <h3>Cálculo de Merma</h3>
+                    <p>Agrega el porcentaje de desperdicio de los ingredientes (como cáscaras de huevo o pulpa) para calcular el costo neto real exacto.</p>
+                </div>
+                <div class="feature-card">
+                    <span class="feature-icon">🛡️</span>
+                    <h3>100% Offline y Privado</h3>
+                    <p>Tus recetas y precios son tuyos. No almacenamos datos en servidores ni en la nube. Funciona sin internet y cuenta con respaldos locales cifrados.</p>
+                </div>
+                <div class="feature-card">
+                    <span class="feature-icon">📄</span>
+                    <h3>Fichas en PDF</h3>
+                    <p>Exporta reportes profesionales y cotizaciones limpias con un solo toque para compartir o imprimir (Versión Premium).</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="cta-section" id="pricing">
+        <div class="container">
+            <div class="cta-box">
+                <h2>Comienza a ganar dinero hoy</h2>
+                <p>Descarga CostoDulce gratis en tu móvil Android y guarda hasta 5 recetas. Desbloquea la versión Premium de por vida con un pago único de <strong>$2.99 USD</strong> para recetas ilimitadas y exportación de PDFs.</p>
+                <a href="#" class="btn btn-primary" style="font-size: 1.1rem; padding: 1rem 2rem;" id="pricing-cta">Descargar en Google Play</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-container">
+            <p>&copy; 2026 CostoDulce. Todos los derechos reservados.</p>
+            <ul class="footer-links">
+                <li><a href="privacy.html">Política de Privacidad</a></li>
+                <li><a href="#features">Características</a></li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+</html>
